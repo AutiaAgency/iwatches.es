@@ -480,7 +480,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto text-center space-y-4">
           <h2 className="text-2xl font-light tracking-tight">IWatches</h2>
           <p className="text-sm text-muted-foreground">
-            Distribuidor independiente de relojes automáticos japoneses
+            Distribuidor independiente
           </p>
           <p className="text-xs text-muted-foreground">
             © 2024 IWatches. Todos los derechos reservados.
