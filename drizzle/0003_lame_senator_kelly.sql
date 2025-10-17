@@ -1,0 +1,1 @@
+ALTER TABLE `catalog_downloads` ADD `referred_by` text REFERENCES user(id);

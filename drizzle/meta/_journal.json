@@ -15,6 +15,20 @@
       "when": 1760259650298,
       "tag": "0001_stormy_the_fallen",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1760712413728,
+      "tag": "0002_smiling_vanisher",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1760712431325,
+      "tag": "0003_lame_senator_kelly",
+      "breakpoints": true
     }
   ]
 }

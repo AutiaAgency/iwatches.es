@@ -92,4 +92,17 @@ export const catalogDownloads = sqliteTable('catalog_downloads', {
   downloadedAt: integer('downloaded_at', { mode: 'timestamp' })
     .$defaultFn(() => new Date())
     .notNull(),
+  referredBy: text('referred_by').references(() => user.id),
+});
+
+// Add referrals table
+export const referrals = sqliteTable('referrals', {
+  id: integer('id').primaryKey({ autoIncrement: true }),
+  userId: text('user_id')
+    .notNull()
+    .references(() => user.id, { onDelete: 'cascade' }),
+  code: text('code').notNull().unique(),
+  createdAt: integer('created_at', { mode: 'timestamp' })
+    .$defaultFn(() => new Date())
+    .notNull(),
 });
