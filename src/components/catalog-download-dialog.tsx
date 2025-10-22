@@ -1,25 +1,23 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Download, Loader2, CheckCircle } from "lucide-react"
 import { toast } from "sonner"
-import { useSearchParams } from "next/navigation"
 
 interface CatalogDownloadDialogProps {
   open: boolean
   onOpenChange: (open: boolean) => void
+  referralCode?: string | null
 }
 
-export function CatalogDownloadDialog({ open, onOpenChange }: CatalogDownloadDialogProps) {
+export function CatalogDownloadDialog({ open, onOpenChange, referralCode }: CatalogDownloadDialogProps) {
   const [email, setEmail] = useState("")
   const [name, setName] = useState("")
   const [isLoading, setIsLoading] = useState(false)
   const [emailSent, setEmailSent] = useState(false)
-  const searchParams = useSearchParams()
-  const referralCode = searchParams.get("ref")
 
   const handleDownload = async (e: React.FormEvent) => {
     e.preventDefault()

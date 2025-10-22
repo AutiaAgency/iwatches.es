@@ -6,11 +6,12 @@ import { Textarea } from "@/components/ui/textarea"
 import { Card } from "@/components/ui/card"
 import { Shield, Package, FileText, MessageCircle, Mail, Phone, Download, Star, User, LogOut, Menu, X } from "lucide-react"
 import Image from "next/image"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { CatalogDownloadDialog } from "@/components/catalog-download-dialog"
 import { useSession } from "@/lib/auth-client"
-import { useRouter } from "next/navigation"
+import { useRouter, useSearchParams } from "next/navigation"
 import { toast } from "sonner"
+import { Suspense } from "react"
 
 const watches = [
   {
@@ -88,7 +89,7 @@ const testimonials = [
   }
 ]
 
-export default function Home() {
+function HomeContent() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -98,6 +99,8 @@ export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const { data: session, isPending } = useSession()
   const router = useRouter()
+  const searchParams = useSearchParams()
+  const referralCode = searchParams.get("ref")
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -590,7 +593,16 @@ export default function Home() {
       <CatalogDownloadDialog 
         open={catalogDialogOpen}
         onOpenChange={setCatalogDialogOpen}
+        referralCode={referralCode}
       />
     </div>
+  )
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-background" />}>
+      <HomeContent />
+    </Suspense>
   )
 }
