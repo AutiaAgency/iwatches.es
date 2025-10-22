@@ -1,10 +1,19 @@
 import { NextRequest, NextResponse } from "next/server"
 import { Resend } from "resend"
 
-const resend = new Resend(process.env.RESEND_API_KEY)
-
 export async function POST(request: NextRequest) {
   try {
+    // Check if API key is configured
+    if (!process.env.RESEND_API_KEY) {
+      console.error("RESEND_API_KEY is not configured")
+      return NextResponse.json(
+        { error: "Email service is not configured" },
+        { status: 500 }
+      )
+    }
+
+    const resend = new Resend(process.env.RESEND_API_KEY)
+
     const { email, name, catalogType } = await request.json()
 
     if (!email || !name) {
@@ -25,7 +34,7 @@ export async function POST(request: NextRequest) {
 
     // Enviar email con Resend
     const { data, error } = await resend.emails.send({
-      from: "IWatches <noreply@iwatches.com>",
+      from: "IWatches <onboarding@resend.dev>",
       to: [email],
       subject: `Tu ${catalogName} está listo`,
       html: `
@@ -146,7 +155,7 @@ export async function POST(request: NextRequest) {
               <p><strong>¿Necesitas ayuda?</strong></p>
               <p>Si estás buscando un modelo específico o tienes alguna pregunta, no dudes en contactarnos:</p>
               <p>
-                📱 WhatsApp: <a href="https://wa.me/">+34 644 70 64 02</a><br>
+                📱 WhatsApp: <a href="https://wa.me/34644706402">+34 644 70 64 02</a><br>
                 📧 Email: contacto@iwatches.com
               </p>
               
