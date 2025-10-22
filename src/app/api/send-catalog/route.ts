@@ -1,10 +1,20 @@
 import { Resend } from 'resend';
 import { NextRequest, NextResponse } from 'next/server';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request: NextRequest) {
   try {
+    // CRÍTICO: Verificar que RESEND_API_KEY esté configurada ANTES de inicializar
+    if (!process.env.RESEND_API_KEY) {
+      console.error("RESEND_API_KEY is not configured");
+      return NextResponse.json(
+        { error: "Email service is not configured. Please contact support." },
+        { status: 500 }
+      );
+    }
+
+    // CRÍTICO: Inicializar Resend DENTRO de la función, no fuera
+    const resend = new Resend(process.env.RESEND_API_KEY);
+
     const { email, name, catalogType } = await request.json();
 
     if (!email || !name) {
@@ -16,7 +26,7 @@ export async function POST(request: NextRequest) {
     const isPremium = catalogType === 'premium';
 
     const { data, error } = await resend.emails.send({
-      from: 'IWatches <onboarding@resend.dev>', // Cambiar a tu dominio verificado
+      from: 'IWatches <onboarding@resend.dev>',
       to: [email],
       subject: isPremium 
         ? '🎁 Tu Catálogo Premium - IWatches' 
