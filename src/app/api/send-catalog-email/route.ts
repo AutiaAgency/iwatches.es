@@ -23,6 +23,18 @@ export async function POST(request: NextRequest) {
       )
     }
 
+    const apiKey = process.env.RESEND_API_KEY
+
+    if (!apiKey) {
+      console.error("Resend API key is not configured.")
+      return NextResponse.json(
+        { error: "Servicio de email no configurado" },
+        { status: 500 }
+      )
+    }
+
+    const resend = new Resend(apiKey)
+
     // Determinar el tipo de catálogo
     const catalogName = catalogType === "premium" 
       ? "Catálogo Premium IWatches 2025-2026" 

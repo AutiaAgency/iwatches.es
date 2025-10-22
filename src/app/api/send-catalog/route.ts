@@ -1,8 +1,6 @@
 import { Resend } from 'resend';
 import { NextRequest, NextResponse } from 'next/server';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request: NextRequest) {
   try {
     const { email, name, catalogType } = await request.json();
@@ -10,6 +8,15 @@ export async function POST(request: NextRequest) {
     if (!email || !name) {
       return NextResponse.json({ error: "Email y nombre son requeridos" }, { status: 400 });
     }
+
+    const apiKey = process.env.RESEND_API_KEY;
+
+    if (!apiKey) {
+      console.error("Resend API key is not configured.");
+      return NextResponse.json({ error: "Servicio de email no configurado" }, { status: 500 });
+    }
+
+    const resend = new Resend(apiKey);
 
     const catalogUrl = "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/document-uploads/CATALOGO-25-26-1760710906370.pdf";
     
