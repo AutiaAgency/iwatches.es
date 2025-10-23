@@ -19,7 +19,7 @@ const watches = [
     reference: "SSK021K1",
     price: "325€",
     description: "Reloj elegante con esfera sunburst y complicación de fecha. Perfecto para ocasiones formales.",
-    image: "https://res.cloudinary.com/djg9xipqe/image/upload/v1761213377/SSK019K1_uz6rrd.png"
+    image: "https://res.cloudinary.com/djg9xipqe/image/upload/v1761217242/SSK019K1_mw6qu9.jpg"
   },
   {
     name: "Seiko 5 Sports GMT",
@@ -33,14 +33,14 @@ const watches = [
     reference: "SSk035K1",
     price: "325€",
     description: "Cronómetro automático de precisión con reserva de marcha de 40 horas y precisión superior.",
-    image: "https://res.cloudinary.com/djg9xipqe/image/upload/v1761213378/SSK035K1_stjyov.png"
+    image: "https://res.cloudinary.com/djg9xipqe/image/upload/v1761217242/SSK035K1_gfp67e.jpg"
   },
   {
     name: "Seiko Prospex",
     reference: "SSC947P1",
     price: "595€",
     description: "Artesanía exquisita con esfera acabada a mano y el reconocido movimiento Spring Drive.",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/bc1cf909-541d-417d-af5a-f673996803ec/generated_images/professional-product-photograph-of-a-jap-6815d532-20251012084122.jpg"
+    image: "https://res.cloudinary.com/djg9xipqe/image/upload/v1761217243/SSC947P1_xbuecm.jpg"
   },
   {
     name: "Seiko Propspex",
