@@ -26,14 +26,14 @@ const watches = [
     reference: "SSK003K1",
     price: "325€",
     description: "Automático clásico con números romanos y cristal abovedado. Diseño atemporal a un valor excepcional.",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/bc1cf909-541d-417d-af5a-f673996803ec/generated_images/professional-product-photograph-of-a-jap-998b0f75-20251012084109.jpg"
+    image: "https://res.cloudinary.com/djg9xipqe/image/upload/v1761213378/SSK003K1_lijbk9.png"
   },
   {
     name: "Seiko 5 Sports GMT",
     reference: "SSk035K1",
     price: "325€",
     description: "Cronómetro automático de precisión con reserva de marcha de 40 horas y precisión superior.",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/bc1cf909-541d-417d-af5a-f673996803ec/generated_images/professional-product-photograph-of-a-vin-3d6af314-20251012084115.jpg"
+    image: "https://res.cloudinary.com/djg9xipqe/image/upload/v1761213378/SSK035K1_stjyov.png"
   },
   {
     name: "Seiko Prospex",
