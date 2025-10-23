@@ -21,7 +21,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Email y nombre son requeridos" }, { status: 400 });
     }
 
-    const catalogUrl = "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/document-uploads/CATALOGO-25-26-1760710906370.pdf";
+    const catalogUrl = "https://dl.dropboxusercontent.com/s/fi/mpao2eg23pr48nnz6dp1k/CAT-LOGO-25-26.pdf?rlkey=yajcjmetrxy3e7gj6fr7sk1eo&e=1&st=wxgk60h7&dl=0";
     
     const isPremium = catalogType === 'premium';
 
