@@ -56,21 +56,21 @@ const testimonials = [
     name: "Carlos Mendoza",
     location: "Madrid, España",
     rating: 5,
-    comment: "Pedí un Seiko Prospex y el servicio fue excepcional. El reloj llegó perfectamente empaquetado con toda la documentación. ¡Totalmente recomendado!",
+    comment: "Todo el proceso fue impecable. Ignacio me explicó cada detalle del reloj y del pedido, y el Seiko llegó exactamente como se describía: nuevo, con garantía y un empaquetado muy cuidado. El tono dorado del SSK021K1 en persona es espectacular. Sin duda repetiré",
     watch: "SSK035K1"
   },
   {
     name: "Alberto Pérez",
     location: "Valladolid, España",
     rating: 5,
-    comment: "La atención al cliente es increíble. Me ayudaron a encontrar el Seiko GMT naranja a un precio excepcional. Llegó antes del tiempo estimado y asegurado.",
+    comment: "Tenía mis dudas al principio, pero la comunicación fue constante y profesional. El reloj llegó en el plazo indicado y con su factura. El SSK005K1 tiene una presencia increíble, se nota la calidad con la que trabajan.",
     watch: "SSK005K1"
   },
   {
     name: "Javier Ruiz",
     location: "Valencia, España",
     rating: 5,
-    comment: "Como coleccionista, aprecio la autenticidad y transparencia. IWatches cumple con todo lo prometido.",
+    comment: "Servicio impecable. Reloj original, con su caja, papeles y envío rápido. La comunicación fue cercana y transparente en todo momento y el trato recibido marca la diferencia.",
     watch: "TAG Heuer Fórmula 1"
   },
   {
