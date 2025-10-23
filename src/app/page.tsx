@@ -63,8 +63,8 @@ const testimonials = [
     name: "Alberto Pérez",
     location: "Valladolid, España",
     rating: 5,
-    comment: "Tenía mis dudas al principio, pero la comunicación fue constante y profesional. El reloj llegó en el plazo indicado y con su factura. El SSK005K1 tiene una presencia increíble, se nota la calidad con la que trabajan.",
-    watch: "SSK005K1"
+    comment: "Tenía mis dudas al principio, pero la comunicación fue constante y profesional. El reloj llegó en el plazo indicado y con su factura. Se nota la calidad con la que trabajan.",
+    watch: "SSK021K1"
   },
   {
     name: "Javier Ruiz",
@@ -77,14 +77,14 @@ const testimonials = [
     name: "Carlos",
     location: "Cádiz, España",
     rating: 5,
-    comment: "Excelente experiencia de compra. El seguimiento del envío fue perfecto y el reloj superó mis expectativas. Volveré a comprar sin duda.",
-    watch: "SSK021K1"
+    comment: "Es el segundo Seiko que compro con ellos y todo perfecto. El SSK005K1 con esfera naranja es aún más impresionante en vivo. Ignacio me mandó fotos antes del envío y todo llegó en perfecto estado se nota que se preocupan por el cliente.",
+    watch: "SSK005K1"
   },
   {
     name: "Carlos",
     location: "Cádiz, España",
     rating: 5,
-    comment: "Excelente experiencia de compra. El seguimiento del envío fue perfecto y el reloj superó mis expectativas. Volveré a comprar sin duda.",
+    comment: "Buscaba el modelo Panda desde hacía meses y aquí lo encontré nuevo, a un precio competitivo y con un trato excelente. Me enviaron la factura, el número de seguimiento y fotos antes del envío. Experiencia de 10, muy profesional.",
     watch: "SSC911P1"
   }
 ]
