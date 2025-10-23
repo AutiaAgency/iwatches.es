@@ -26,7 +26,7 @@ const watches = [
     reference: "SSK003K1",
     price: "325€",
     description: "Automático clásico con números romanos y cristal abovedado. Diseño atemporal a un valor excepcional.",
-    image: "https://res.cloudinary.com/djg9xipqe/image/upload/v1761213378/SSK003K1_lijbk9.png"
+    image: "https://res.cloudinary.com/djg9xipqe/image/upload/v1761216877/SSK003K1_ttmlwj.jpg"
   },
   {
     name: "Seiko 5 Sports GMT",
