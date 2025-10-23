@@ -584,7 +584,7 @@ function HomeContent() {
             Distribuidor independiente
           </p>
           <p className="text-xs text-muted-foreground">
-            © 2024 IWatches. Todos los derechos reservados.
+            © 2025 IWatches. Todos los derechos reservados.
           </p>
         </div>
       </footer>
