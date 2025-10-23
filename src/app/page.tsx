@@ -53,8 +53,8 @@ const watches = [
 
 const testimonials = [
   {
-    name: "Carlos Mendoza",
-    location: "Madrid, España",
+    name: "Mateo Gracia",
+    location: "Logroño, España",
     rating: 5,
     comment: "Todo el proceso fue impecable. Ignacio me explicó cada detalle del reloj y del pedido, y el Seiko llegó exactamente como se describía: nuevo, con garantía y un empaquetado muy cuidado. El tono dorado del SSK021K1 en persona es espectacular. Sin duda repetiré",
     watch: "SSK035K1"
@@ -67,22 +67,22 @@ const testimonials = [
     watch: "SSK021K1"
   },
   {
-    name: "Javier Ruiz",
+    name: "Oscar Soto",
     location: "Valencia, España",
     rating: 5,
     comment: "Servicio impecable. Reloj original, con su caja, papeles y envío rápido. La comunicación fue cercana y transparente en todo momento y el trato recibido marca la diferencia.",
     watch: "TAG Heuer Fórmula 1"
   },
   {
-    name: "Carlos",
+    name: "Carlos González",
     location: "Cádiz, España",
     rating: 5,
     comment: "Es el segundo Seiko que compro con ellos y todo perfecto. El SSK005K1 con esfera naranja es aún más impresionante en vivo. Ignacio me mandó fotos antes del envío y todo llegó en perfecto estado se nota que se preocupan por el cliente.",
     watch: "SSK005K1"
   },
   {
-    name: "Carlos",
-    location: "Cádiz, España",
+    name: "Pablo Velasco",
+    location: "León, España",
     rating: 5,
     comment: "Buscaba el modelo Panda desde hacía meses y aquí lo encontré nuevo, a un precio competitivo y con un trato excelente. Me enviaron la factura, el número de seguimiento y fotos antes del envío. Experiencia de 10, muy profesional.",
     watch: "SSC911P1"
