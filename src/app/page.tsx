@@ -19,7 +19,7 @@ const watches = [
     reference: "SSK021K1",
     price: "325€",
     description: "Reloj elegante con esfera sunburst y complicación de fecha. Perfecto para ocasiones formales.",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/bc1cf909-541d-417d-af5a-f673996803ec/generated_images/professional-product-photograph-of-a-lux-c532ad9e-20251012084102.jpg"
+    image: "https://res.cloudinary.com/djg9xipqe/image/upload/v1761213377/SSK019K1_uz6rrd.png"
   },
   {
     name: "Seiko 5 Sports GMT",
