@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "IWatches - Relojes Automáticos Japoneses",
-  description: "Distribuidor independiente especializado en relojes automáticos japoneses. Creemos en el valor, la historia y la precisión.",
+  title: "IWatches - Relojes Automáticos",
+  description: "Distribuidor independiente especializado en relojes automáticos. Creemos en el valor, la historia y la precisión.",
 };
 
 export default function RootLayout({
