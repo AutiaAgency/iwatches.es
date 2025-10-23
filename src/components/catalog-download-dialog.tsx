@@ -83,7 +83,7 @@ export function CatalogDownloadDialog({ open, onOpenChange, referralCode }: Cata
       
       // Download PDF automatically
       const link = document.createElement("a")
-      link.href = "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/document-uploads/CATALOGO-25-26-1760710906370.pdf"
+      link.href = "https://dl.dropboxusercontent.com/s/fi/mpao2eg23pr48nnz6dp1k/CAT-LOGO-25-26.pdf?rlkey=yajcjmetrxy3e7gj6fr7sk1eo&e=1&st=wxgk60h7&dl=0"
       link.download = "IWatches-Catalogo-2025-2026.pdf"
       link.target = "_blank"
       document.body.appendChild(link)
