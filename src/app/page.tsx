@@ -47,7 +47,7 @@ const watches = [
     reference: "SSC911P1",
     price: "545€",
     description: "Icónico reloj de campo con bisel de brújula y agujas catedral. Construido para la aventura.",
-    image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/bc1cf909-541d-417d-af5a-f673996803ec/generated_images/professional-product-photograph-of-an-el-4b33064b-20251012084129.jpg"
+    image: "https://res.cloudinary.com/djg9xipqe/image/upload/v1761217241/SSC911P1_th2gtl.jpg"
   }
 ]
 
