@@ -321,7 +321,7 @@ function HomeContent() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10 sm:mb-16">
             <h3 className="text-3xl sm:text-4xl md:text-5xl font-light mb-3 sm:mb-4">Nuestra Colección</h3>
-            <p className="text-sm sm:text-base text-muted-foreground">Selección curada de relojes excepcionales</p>
+            <p className="text-sm sm:text-base text-muted-foreground">Nuestra selección de relojes basada en tus gustos</p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
@@ -444,7 +444,7 @@ function HomeContent() {
               </div>
               <h4 className="text-lg sm:text-xl font-light">Documentación Completa</h4>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Emitimos facturas adecuadas y mantenemos registros completos de cada transacción.
+                Emitimos facturas y mantenemos registros completos de cada transacción.
               </p>
             </div>
           </div>
